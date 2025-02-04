@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} KeyboardStore {% endblock title %}</title>
+
+    {% comment %} bootstrap {% endcomment %}
+    <link rel="stylesheet" href="{% static 'bootstrap\css\bootstrap.min.css' %}">
+    {% comment %} css {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <header class="sticky-top">
+        <div class="header-container d-flex">
+            <navbar class="header-nav pt-4">
+                <ul class="header-list d-flex">
+                    <li>
+                        <a href="/" class="nav-a m3">Home</a>
+                    </li>
+                    <li>
+                        <a href="/" class="nav-a m3">Shop</a>
+                    </li>
+
+                </ul>
+            </navbar>
+            <div class="header-logo">
+                <a href="/"><img src="{% static "img/logo.png" %}" alt="" class="kb-logo" width="160" height="160"></a>
+            </div>
+            <div class="header-profile">
+                <a href="#" class="m-3"> Login </a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        {% block content %}
+        {% endblock content %}    
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <footer class="sticky-bottom">
+        <div class="footer-container d-flex">
+            <div class="kb-info flex-raw">
+                <div class="footer-text">This is test website</div>
+                <div class="footer-text">Should be smth like keyboard store</div>
+                <div class="footer-text">Hope it looks like this xd</div>
+            </div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class="about flex-row">
+                <div class="footer-text">About me</div>
+                <div class="footer-text">Im 21</div>
+                <div class="footer-text">Im autistic maybe</div>
+            </div>
+            <div class="links flex-row">
+                <div class="footer-text">Links</div>
+                <div class="footer-text"><a href="https://vk.com/id.beyond"> vk </a></div>
+                <div class="footer-text"><a href="https://t.me/bxyond"> telegram </a></div>
+            </div>
+        </div>
+    </footer>
+
+
+    {% comment %} js for bootstrap {% endcomment %}
+    <script src='{% static 'bootstrap\js\bootstrap.bundle.min.js' %}'></script>
+</body>
+
+</html>
