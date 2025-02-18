@@ -16,11 +16,11 @@
             <p>Description: {{ product.description|linebreaks}}</p>
             {% if product.discount %}
                 <div class="card-discount d-flex gap-2">
-                    <p class="line">Standart price: {{ product.price }}</p>
-                    <p>Discount price:{{ product.sell_price }}</p>
+                    <p class="line">$ {{ product.price }}</p>
+                    <p>$ {{ product.sell_price }}</p>
                 </div>
             {% else %}
-                <p class="price">Price: {{ product.price }}$</p>
+                <p class="price">$ {{ product.price }}</p>
             {% endif %}
             <a href="#" class="cart-btn d-flex align-items-center justify-content-center">Add to cart</a>
         </div>

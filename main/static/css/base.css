@@ -10,8 +10,8 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    /* background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-    /* background-size: 400% 400%;
+    background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
     animation: gradient 120s ease infinite;
 }
 
@@ -25,7 +25,7 @@ body{
     100% {
         background-position: 0% 50%;
     }
-} */
+}
 
 ul{
     list-style: none;
@@ -61,11 +61,6 @@ h5{
     margin-right: 20px;
 }
 
-.detail-image{
-    width: 600px;
-    height: 600px;
-}
-
 .logokb{
     position: fixed;
     top: 0.5%;
@@ -76,7 +71,7 @@ h5{
 
 .kb-logo{
     position: fixed;
-    top: 0.5%;
+    top: -0.5%;
     left: 44.5%;
     width: 100px;
     height: 100px;
@@ -104,6 +99,22 @@ h5{
     text-transform: uppercase;
 }
 
+.button-home{
+    transition: all 0.5s ease;  
+}
+
+.button-home:hover{
+    color:#fff;
+}
+
+.button-shop{
+    transition: all 0.5s ease;  
+}
+
+.button-shop:hover{
+    color:#fff;
+}
+
 .header-container {
     box-sizing: border-box;
     min-width: 1400px;
@@ -129,13 +140,17 @@ h5{
     backdrop-filter: blur(20px)
 }
 
+.detail-product{
+    margin-top: 75px;
+}
+
 .home-title{
     margin-top: 210px;
     margin-bottom: 50px;
 }
 
 .home-card{
-    width: 310px;
+    width: 305px;
     height: 445px;
     border: 1px solid #00000027;
     border-radius: 5px;
@@ -145,7 +160,20 @@ h5{
 
 .home-card:hover{
     border: 1px solid #000;
+    width: 328px;
+    height: 490px;
 }
+
+.home-card img{
+    margin-top: 1px;
+    transition: all 0.5s ease;
+}
+
+.home-card:hover img{
+    width: 325px;
+    height: 325px;
+}
+
 
 .title-card {
     max-width: 185px;
@@ -162,4 +190,109 @@ h5{
     font-size: 20px;
     font-weight: 700;
     margin-top: -10px;
+}
+
+.home-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #00000027;
+    border-radius: 5px;
+
+    transition: all .4s ease;
+    z-index: 2;
+}
+
+.home-btn:hover{
+    border: 1px solid #000;
+}
+
+.detail-image{
+    width: 550px;
+    height: 550px;
+    border: 1px solid #00000027;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+
+.detail-image:hover{    
+    border: 1px solid #000;
+}
+
+.detail-description{
+    
+}
+
+.detail-description p {
+    margin-top: 20px;
+    max-width: 700px;}
+
+.detail-description h2 span{
+    font-size: 56px;
+}
+
+.card-discount {
+    margin-top: -10px;
+    font-weight: 600;
+}
+
+.card-discount .price{
+    margin-top: -1px;
+}
+
+.line {
+    opacity: 0.7;
+    text-decoration: line-through;
+    font-weight: 300;
+}
+
+.cart-btn {
+    width: 180px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    z-index: 2;
+    margin-top: 20px;
+    background-color: #00000044;
+    color:#00000080;
+}
+
+.cart-btn:hover {
+    border: 1px solid #00000027;
+    background-color: #00000022;
+}
+
+.footer-text a{
+    color:#000;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.footer-text a:hover {
+    color:#fff;
+}
+
+.main{
+    margin-left: 150px;
+}
+
+.main-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: 65px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,325px);
+    width: 100%;
+    max-width: 1300px;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 0px;
+    row-gap: 10px;
+    margin: 0 auto;
 }
